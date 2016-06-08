@@ -1,65 +1,56 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
     <title>pugo - ss-panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="pugo">
     <meta name="keywords" content="ss-panel"/>
     <meta name="description" content="Lets talk about cat"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/prism.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="/css/pure-min.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/blog.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/railscasts.css" type="text/css" rel="stylesheet" media="all"/>
 </head>
 <body class="post-tag" data-perma="post-tag-pugo">
-<header id="header">
-    <div class="container">
-        <div class="header clearfix">
-            <nav id="site-nav">
-                <ul class="nav nav-inverse nav-pills pull-right">
-                    <li role="presentation" class="">
-                        <a href="/" >Home
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="/archive" >Archive
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="/about" >About
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="http://pugo.io"  target="_blank" >Source
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h3 id="site-title">
-                <a href="/">ss-panel <sup>ss-panel</sup></a>
-            </h3>
-        </div>
-    </div>
-</header>
-
-<section id="main">
-    <div class="container">
-        <div id="article-list">
-            <h2 class="tag text-center">pugo</h2>
-            <article class="article">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 panel panel-default">
-                        <header class="header">
-                            <div class="meta">
-                        <span class="date">
-                            <span class="month">3</span>
-                            <span class="day">25</span>
-                        </span>
-                            </div>
-                            <h3 class="title">
-                                <a href="/2016/3/25/welcome.html">Welcome</a>
-                            </h3>
-                        </header>
-                        <section class="brief"><p>When you read the post, <code>PuGo</code> is running successfully.</p>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar pure-u">
+    <header class="header">
+        <hgroup>
+            <h1 class="brand-title">
+                <a href="/" class="brand-title">ss-panel</a>
+            </h1>
+            <h2 class="brand-tagline">ss-panel</h2>
+        </hgroup>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="">
+                    <a href="/">Home</a>
+                </li>
+                <li class="">
+                    <a href="/archive">Archive</a>
+                </li>
+                <li class="">
+                    <a href="/about">About</a>
+                </li>
+                <li class="">
+                    <a href="http://pugo.io" target="_blank" >Source</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+    <div class="pure-u-1">
+        <div class="content">
+            <div class="page-header">
+                <h1>All Posts</h1>
+            </div>
+            <h2>：pugo</h2>
+            <div class="post">
+                <h3 class="post-header"><a href="/2016/3/25/welcome.html">Welcome</a></h3>
+                <div class="post-meta">
+                    <small>2016-3-25</small>
+                </div>
+                <div class="post-description"><p>When you read the post, <code>PuGo</code> is running successfully.</p>
 
 <p>This post is generated from file <code>source/welcome.md</code>. You can learn it and try to write your own article with following guide.</p>
 
@@ -106,42 +97,37 @@ Markdown is often used to format readme files, for writing messages in online di
 and to create rich text using a plain text editor.
 
 </code></pre>
-</section>
-                        <aside class="aside clearfix">
-                            <a class="btn btn-primary btn-lg pull-right" href="/2016/3/25/welcome.html">Read More</a>
-                        </aside>
-                    </div>
+</div>
+                <div class="more">
+                    <a href="/2016/3/25/welcome.html" class="btn pure-button pure-button-primary">Read More..</a>
                 </div>
-            </article>
-            
-            <div class="article-pager text-center">
-                
-                
             </div>
+            
         </div>
-    </div>
-</section>
-<footer id="footer">
-    <div class="container text-center">
-        <p>© 2015 ss-panel.
-            <a href="http://creativecommons.org/licenses/by/3.0/">Some rights reserved </a> |
-            <a href="/feed.xml">Feed</a> |
-            <a href="/sitemap.xml">Sitemap</a>
-        </p>
-        <p>Powered by <a href="https://github.com/go-xiaohei/pugo">PuGo 0.10.0 (beta)</a>. Theme by Default.
-        </p>
-        
+        <div class="pagination pure-g">
+            <ul>
+                
+                
+            </ul>
+        </div>
+        <div class="footer">
+    <p>&copy; ss-panel 2015
+        powered by <a href="http://github.com/go-xiaohei/pugo">PuGo</a> with <a href="http://purecss.io" target="_blank">Pure</a>
+    </p>
+    
     
     
 
+</div>
     </div>
-</footer>
+</div>
 <script src="/js/jquery-2.1.4.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/prism.min.js"></script>
+<script src="/js/highlight.pack.js"></script>
 <script>
-    $(document).ready(function () {
-        $("pre code").addClass("line-numbers")
+    $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
     });
 </script>
 </body>

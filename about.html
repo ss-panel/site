@@ -1,67 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
     <title>About PuGo - ss-panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="pugo">
     <meta name="keywords" content="ss-panel"/>
     <meta name="description" content="some words about pugo"/>
-    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/css/prism.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link href="/css/pure-min.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/blog.css" type="text/css" rel="stylesheet" media="all">
+    <link href="/css/railscasts.css" type="text/css" rel="stylesheet" media="all"/>
 </head>
 <body class="page" data-perma="about">
-<header id="header">
-    <div class="container">
-        <div class="header clearfix">
-            <nav id="site-nav">
-                <ul class="nav nav-inverse nav-pills pull-right">
-                    <li role="presentation" class="">
-                        <a href="/" >Home
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="/archive" >Archive
-                        </a>
-                    </li>
-                    <li role="presentation" class="active">
-                        <a href="/about" >About
-                        </a>
-                    </li>
-                    <li role="presentation" class="">
-                        <a href="http://pugo.io"  target="_blank" >Source
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h3 id="site-title">
-                <a href="/">ss-panel <sup>ss-panel</sup></a>
-            </h3>
-        </div>
-    </div>
-</header>
-
-<section id="main">
-    <div class="container">
-        <div id="article-single">
-            <article class="article">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 panel panel-default">
-                        <header class="header">
-                            <div class="meta">
-                        <span class="date">
-                            <span class="month">3</span>
-                            <span class="day">24</span>
-                        </span>
-                            </div>
-                            <h3 class="title">
-                                <a href="/about.html">About PuGo</a>
-                            </h3>
-                        </header>
-                        <aside class="aside clearfix">
-                            <a class="stat label label-default pull-right" href="http://pugo.io" target="_blank">pugo</a>
-                        </aside>
-                        <section class="brief"><h3 id="introduction">Introduction</h3>
+<div class="pure-g-r" id="layout">
+    <div class="sidebar pure-u">
+    <header class="header">
+        <hgroup>
+            <h1 class="brand-title">
+                <a href="/" class="brand-title">ss-panel</a>
+            </h1>
+            <h2 class="brand-tagline">ss-panel</h2>
+        </hgroup>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="">
+                    <a href="/">Home</a>
+                </li>
+                <li class="">
+                    <a href="/archive">Archive</a>
+                </li>
+                <li class="active">
+                    <a href="/about">About</a>
+                </li>
+                <li class="">
+                    <a href="http://pugo.io" target="_blank" >Source</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+    <div class="pure-u-1">
+        <div class="content">
+            <div class="post">
+                <h1 class="post-header">About PuGo</h1>
+                <div class="post-description"><h3 id="introduction">Introduction</h3>
 
 <p><code>PuGo</code> is a simple static site generator by <a href="https://golang.org">Golang</a>. It compiles <a href="https://help.github.com/articles/markdown-basics/">markdown</a> to site pages with beautiful theme. No dependencies, cross platform and very fast.</p>
 
@@ -104,41 +86,48 @@
 <ul>
 <li>Theme: theme documentation is <a href="http://pugo.io/en/docs/tpl/syntax.html">Here</a></li>
 </ul>
-</section>
-                    </div>
-                </div>
-            </article>
+</div>
+            </div>
+            
+<div id="comment">
+    
+    <div id="disqus_thread"></div>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = '//sspanel.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+    
+</div>
+
         </div>
-        
-<section id="comment">
+        <div class="footer">
+    <p>&copy; ss-panel 2015
+        powered by <a href="http://github.com/go-xiaohei/pugo">PuGo</a> with <a href="http://purecss.io" target="_blank">Pure</a>
+    </p>
     
-    
-</section>
-
-    </div>
-</section>
-<footer id="footer">
-    <div class="container text-center">
-        <p>© 2015 ss-panel.
-            <a href="http://creativecommons.org/licenses/by/3.0/">Some rights reserved </a> |
-            <a href="/feed.xml">Feed</a> |
-            <a href="/sitemap.xml">Sitemap</a>
-        </p>
-        <p>Powered by <a href="https://github.com/go-xiaohei/pugo">PuGo 0.10.0 (beta)</a>. Theme by Default.
-        </p>
-        
     
     
 
+</div>
     </div>
-</footer>
+</div>
 <script src="/js/jquery-2.1.4.min.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/prism.min.js"></script>
+<script src="/js/highlight.pack.js"></script>
 <script>
-    $(document).ready(function () {
-        $("pre code").addClass("line-numbers")
+    $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
     });
 </script>
 </body>
 </html>
+
